@@ -106,4 +106,17 @@ body {
   top: 27px;
   width: 30%;
   transition-delay: 0.1s;
+}
+
+@media (min-width: 768px) {
+  .white-block {
+    height: 50px;
+    width: 45%;
+  }
+  .header__heading {
+    font-size: 6.6rem;
+  }
+  .header_text {
+    font-size: 2.2rem;
+  }
 }/*# sourceMappingURL=main.css.map */
