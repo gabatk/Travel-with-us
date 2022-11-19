@@ -10,6 +10,24 @@ function handleNav() {
 			nav.classList.remove('nav--active');
 		});
 	});
+
+	handleNavItemsAnimation();
 }
+
+const handleNavItemsAnimation = () => {
+	let delayTime = 0;
+
+	allNavItems.forEach(navItem => {
+		navItem.classList.toggle('nav-items-animation');
+		navItem.style.animationDelay = '.' + delayTime + 's';
+		delayTime++;
+	});
+};
+
+const deleteAnimation = () => {
+	allNavItems.forEach(navItem => {
+		navItem.classList.remove('nav-items-animation');
+	});
+};
 
 navBtn.addEventListener('click', handleNav);
