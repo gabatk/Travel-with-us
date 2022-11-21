@@ -239,7 +239,6 @@ body {
 			border-radius: 8px;
 			background-size: cover;
 			transition: transform 1s, opacity 1s;
-			background-position: center;
 
 			&--first {
 				background-image: colors.$light-blue-gradient,
@@ -395,6 +394,26 @@ body {
 			padding: 1em 0;
 		}
 	}
+
+	.islands {
+		&__cards {
+			display: flex;
+			justify-content: center;
+			flex-wrap: wrap;
+		}
+
+		&__card {
+			margin: 1em;
+			width: 45%;
+
+			&-info {
+				&-title {
+					position: relative;
+					top: -2em;
+				}
+			}
+		}
+	}
 }
 
 @media (min-width: 992px) {
@@ -448,6 +467,14 @@ body {
 		hr {
 			width: 60%;
 			max-width: 900px;
+		}
+	}
+}
+
+@media (min-width: 1100px) {
+	.islands {
+		&__card {
+			width: 30%;
 		}
 	}
 }

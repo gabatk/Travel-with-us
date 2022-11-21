@@ -295,7 +295,6 @@ body {
   border-radius: 8px;
   background-size: cover;
   transition: transform 1s, opacity 1s;
-  background-position: center;
 }
 .islands__card-img--first {
   background-image: linear-gradient(45deg, rgba(8, 206, 255, 0.75), rgba(8, 24, 255, 0.75)), url("../img/island2_640.jpg");
@@ -421,6 +420,19 @@ body {
     font-size: 2.2rem;
     padding: 1em 0;
   }
+  .islands__cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .islands__card {
+    margin: 1em;
+    width: 45%;
+  }
+  .islands__card-info-title {
+    position: relative;
+    top: -2em;
+  }
 }
 @media (min-width: 992px) {
   .burger-btn {
@@ -461,5 +473,10 @@ body {
   .hero-img hr {
     width: 60%;
     max-width: 900px;
+  }
+}
+@media (min-width: 1100px) {
+  .islands__card {
+    width: 30%;
   }
 }/*# sourceMappingURL=main.css.map */
