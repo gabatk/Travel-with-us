@@ -129,6 +129,12 @@ body {
 	animation: navItemsAnimation 1s both;
 }
 
+.black-bars-color,
+.black-bars-color::after,
+.black-bars-color::before {
+	background-color: colors.$dark;
+}
+
 // HEADER
 .header {
 	position: relative;
