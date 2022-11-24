@@ -432,6 +432,57 @@ body {
 	}
 }
 
+// CONTACT
+.contact {
+	position: relative;
+	background-color: colors.$light-white;
+	overflow: hidden;
+
+	.white-block-left {
+		background-color: colors.$dark;
+	}
+
+	&__form,
+	&__form-top {
+		display: flex;
+		flex-direction: column;
+	}
+
+	&__form {
+		&-label {
+			margin-bottom: 0.5em;
+			text-transform: uppercase;
+		}
+
+		&-input {
+			@include mixins.contactForm;
+		}
+
+		&-textarea {
+			@include mixins.contactForm;
+			max-width: 100%;
+			width: 100%;
+			min-height: 150px;
+		}
+
+		&-btn {
+			align-self: flex-end;
+			padding: 1em;
+			width: 100%;
+			max-width: 300px;
+			color: colors.$pure-white;
+			border: none;
+			border-radius: 8px;
+			background-color: colors.$main-color;
+			cursor: pointer;
+
+			&::before {
+				background-color: colors.$secondary-color;
+			}
+		}
+	}
+}
+
 // MEDIA
 @media (min-width: 576px) {
 	.dreams {
